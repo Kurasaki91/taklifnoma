@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nikoh toʻyi uchun taklifnoma</title>
+  <meta name="description" content="Sizni Jasur va Madinaning nikoh toʻyiga taklif etamiz: 2027-yil 12-iyun, soat 18:00, «Bahor» toʻyxonasi, Chilonzor tumani.">
+  <meta name="theme-color" content="#1d1530">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nikoh toʻyi uchun taklifnoma">
+  <meta property="og:description" content="12-iyun, shanba, soat 18:00 · «Bahor» toʻyxonasi, Chilonzor">
+  <meta property="og:url" content="https://YOUR-SITE.netlify.app/">
+  <meta property="og:image" content="https://YOUR-SITE.netlify.app/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="uz_UZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://YOUR-SITE.netlify.app/">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/fav-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Josefin+Sans:wght@300;400;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas class="snow" id="snow" aria-hidden="true"></canvas>
+
+  <div class="viewport">
+    <div class="stage" id="stage">
+
+      <!-- ===== The envelope (opening screen) ===== -->
+      <button class="envelope" id="envelope" type="button" aria-label="Open the invitation" data-i18n-aria="openAria">
+        <span class="envelope__back"></span>
+        <span class="envelope__pocket"></span>
+        <span class="envelope__flap"></span>
+        <span class="seal" aria-hidden="true">J<i>&amp;</i>M</span>
+      </button>
+      <p class="hint" id="hint">
+        <span class="hint__to" data-i18n="letter">A letter for you</span>
+        <span class="hint__tap" data-i18n="tap">Tap the seal to open</span>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- ===== The letter (final screen) ===== -->
+  <div class="card-fit" id="cardFit">
+    <article class="card" id="card" aria-hidden="true">
+      <div class="card__photo">
+        <img src="img/couple.jpg" alt="The couple, hand in hand" data-i18n-alt="photoAlt" width="848" height="1060">
+      </div>
+
+      <div class="card__body">
+        <p class="card__lead" data-i18n="lead">Together with their families</p>
+        <h1 class="card__names">Jasur <span class="card__amp">&amp;</span> Madina</h1>
+        <p class="card__invite" data-i18n="invite">invite you to celebrate their wedding</p>
+
+        <div class="date" aria-label="Saturday, 12 June 2027, at 18:00" data-i18n-aria="dateAria">
+          <span class="date__side" data-i18n="weekday">Saturday</span>
+          <span class="date__day">12</span>
+          <span class="date__side" data-i18n="month">June</span>
+        </div>
+        <p class="date__time" data-i18n="time">2027 · at 18:00</p>
+
+        <p class="venue">
+          <span class="venue__name" data-i18n="venue">Bahor Wedding Hall</span>
+          <span class="venue__area" data-i18n="area">Chilonzor District</span>
+        </p>
+
+        <p class="countdown" id="countdown" role="timer">
+          <span><b data-unit="d">00</b> <i data-i18n="days">days</i></span>
+          <span><b data-unit="h">00</b> <i data-i18n="hrs">hrs</i></span>
+          <span><b data-unit="m">00</b> <i data-i18n="min">min</i></span>
+          <span><b data-unit="s">00</b> <i data-i18n="sec">sec</i></span>
+        </p>
+
+        <div class="actions">
+          <a class="btn btn--primary" href="https://maps.google.com/?q=Chilonzor,Tashkent" target="_blank" rel="noopener">
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <span class="btn__label" data-i18n="map">Show on map</span>
+          </a>
+          <button class="btn btn--glass" type="button" id="calBtn" aria-label="Add the wedding to your calendar" data-i18n-aria="calAria">
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M12 13v4M10 15h4"/></svg></span>
+            <span class="btn__label" data-i18n="cal">Save the date</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ===== Language ===== -->
+  <div class="lang" role="group" aria-label="Til / Language" data-active="uz">
+    <span class="lang__thumb" aria-hidden="true"></span>
+    <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+    <button type="button" class="lang__btn" data-lang="uz" aria-pressed="true">UZ</button>
+  </div>
+
+  <!-- ===== Music ===== -->
+  <button class="music" id="music" type="button" aria-label="Pause music" hidden>
+    <span class="music__art" aria-hidden="true">
+      <svg class="music__ring" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24.5"/><circle class="music__progress" id="progress" cx="26" cy="26" r="24.5"/></svg>
+      <img class="music__cover" src="img/cover.jpg" alt="" width="192" height="192">
+      <span class="music__state">
+        <svg class="i-play" viewBox="0 0 24 24"><path d="M8.5 5.8v12.4l10-6.2z"/></svg>
+        <svg class="i-pause" viewBox="0 0 24 24"><rect x="7" y="6" width="3.6" height="12" rx="1"/><rect x="13.4" y="6" width="3.6" height="12" rx="1"/></svg>
+      </span>
+    </span>
+    <span class="music__text">
+      <span class="music__title" id="trackTitle"></span>
+      <span class="music__artist" id="trackArtist"></span>
+    </span>
+    <span class="music__eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+
+  <audio id="audio" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
