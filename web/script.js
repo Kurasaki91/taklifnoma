@@ -11,7 +11,7 @@
   };
 
   /* Put the song file into /music with exactly this name. */
-  const SONG = { title: "Song title", artist: "Artist", src: "music/song.mp3" };
+  const SONG = { title: "Snowman", artist: "Sia", src: "music/snowman.mp3" };
 
   const $ = (id) => document.getElementById(id);
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

@@ -22,7 +22,7 @@ web/
 ├── style.css
 ├── netlify.toml
 ├── img/            # couple.jpg, og.jpg (havola rasmi), ikonkalar
-└── music/          # song.mp3 shu yerga qo'yiladi
+└── music/          # snowman.mp3 (Sia — Snowman)
 ```
 
 **O'zgartirish kerak bo'lgan joylar:**
@@ -36,7 +36,7 @@ web/
   - `.seal`: konvert muhridagi bosh harflar
   - `href` xarita tugmasida, `og:url`, `og:image`, `canonical` (`YOUR-SITE` o'rniga sayt manzili)
 - `img/couple.jpg`: o'zingizning suratingiz (taxminan 848×1060)
-- `music/song.mp3`: qo'shiq. Fayl bo'lmasa, pleyer ko'rinmaydi.
+- `music/snowman.mp3`: qo'shiq. Boshqasini qo'ysangiz, `script.js` dagi `SONG` ni ham o'zgartiring. Fayl bo'lmasa, pleyer ko'rinmaydi.
 - `img/og.jpg`: Telegram yoki WhatsApp'da havola yuborilganda chiqadigan rasm (1200×630)
 
 **Kompyuterda ko'rish:**
