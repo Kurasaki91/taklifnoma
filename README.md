@@ -1,5 +1,7 @@
 # Taklifnoma — to'y taklifnomasi shabloni
 
+**🔗 Live demo:** https://taklifnoma-demo.netlify.app
+
 Nikoh to'yi uchun ikki xil taklifnoma:
 
 1. **Web taklifnoma** (`web/`): bitta sahifali sayt. Konvert ochiladi, musiqa chaladi, qor yog'adi. Unda sanagacha qolgan vaqt, xarita va kalendar tugmalari bor. O'zbek va ingliz tillarida ishlaydi (asosiy til o'zbekcha), telefonga moslangan va scroll qilmaydi.
@@ -34,7 +36,7 @@ web/
 - `index.html`
   - `<h1 class="card__names">`: kelin-kuyov ismlari
   - `.seal`: konvert muhridagi bosh harflar
-  - `href` xarita tugmasida, `og:url`, `og:image`, `canonical` (`YOUR-SITE` o'rniga sayt manzili)
+  - `href` xarita tugmasida, `og:url`, `og:image`, `canonical` (demo manzili o'rniga o'z saytingiz manzili)
 - `img/couple.jpg`: o'zingizning suratingiz (taxminan 848×1060)
 - `music/snowman.mp3`: qo'shiq. Boshqasini qo'ysangiz, `script.js` dagi `SONG` ni ham o'zgartiring. Fayl bo'lmasa, pleyer ko'rinmaydi.
 - `img/og.jpg`: Telegram yoki WhatsApp'da havola yuborilganda chiqadigan rasm (1200×630)
